@@ -23,3 +23,23 @@ mutation updateBlog($id: String, $title: String, $description: String){
     description
   }
 }`;
+
+export const CREATE_USER = gql`
+mutation createUser($username: String, $email:String, $password: String){
+  createUser(user:{username: $username, email:$email, password: $password}){
+    error
+    success
+  }
+}`;
+
+export const LOGIN_USER = gql`
+mutation loginUser($email:String, $password: String){
+  loginUser(user:{email:$email, password: $password}){
+    id
+    username
+    email
+    token
+    error
+    success
+  }
+}`;

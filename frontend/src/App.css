@@ -10,3 +10,42 @@
   line-height: 75px;
   font-size: 30px;
 }
+
+.box {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.input_fields{
+  margin: 50px;
+}
+.input_fields input{  
+  width: 300px;
+}
+.input_fields button{
+  width: 300px;
+}
+.input_fields .MuiTextField-root {
+  margin-bottom: 30px;
+}
+.box_head  {
+  color: white;
+  background: rgb(223, 130, 130);
+  line-height: 36px;
+}
+.box_head p{
+  margin-top: 0px;
+  cursor: pointer;
+}
+.box_head a{
+  text-decoration: none;
+  color: white;
+}
+.box_password {
+  position: relative;
+}
+.password_icon{
+  position: absolute;
+  right: 0;
+  top: 31px;
+}
